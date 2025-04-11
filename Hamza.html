@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Cybersécurité - Hamza Kiyani</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header, footer {
+      background-color: #1f2937;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #111827;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #3b82f6; }
+    section {
+      width: 95%;
+      margin: auto;
+      padding: 40px 20px;
+      animation: fadeIn 1s ease-in;
+    }
+    h2 {
+      color: #1f2937;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #2563eb;
+      display: inline-block;
+    }
+    .card {
+      background-color: white;
+      padding: 25px;
+      margin: 20px 0;
+      border-left: 5px solid #2563eb;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { padding: 12px; border-bottom: 1px solid #ddd; }
+    img {
+      max-width: 100%;
+      margin-top: 10px;
+      border-radius: 4px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background-color: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+    a { color: #2563eb; }
+    ul { padding-left: 20px; }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hamza Kiyani - Portfolio Cybersécurité</h1>
+    <p>Consultant en cybersécurité | Bug bounty hunter | Auditeur technique et organisationnel</p>
+  </header>
+
+  <nav>
+    <a href="#presentation">Présentation</a>
+    <a href="#competences">Compétences</a>
+    <a href="#realisations">Réalisations</a>
+    <a href="#pour-vous">Ce que je peux faire pour vous</a>
+    <a href="#projection">Ma projection professionnelle</a>
+  </nav>
+
+  <section id="presentation">
+    <h2>Présentation</h2>
+    <p>Actuellement chercheur de sécurité chez WePwn (Bug Bounty Hunter) et ancien consultant auditeur cybersécurité chez Ornisec. J’ai mené des tests d’intrusion, des analyses de risques, déployé des solutions comme OCS Inventory et Graylog pour la supervision sécurité. Certifié EBIOS RM, je prépare actuellement la certification CPTS via Hack The Box Academy.</p>
+  </section>
+
+  <section id="competences">
+    <h2>Tableau de compétences</h2>
+    <table>
+      <tr><th>Domaine</th><th>Compétences</th></tr>
+      <tr><td>Audit technique & organisationnel</td><td>Test d’intrusion, analyse de risque, conformité ISO 27001</td></tr>
+      <tr><td>Supervision & Monitoring</td><td>Déploiement de Graylog (SIEM), centralisation de logs</td></tr>
+      <tr><td>Inventaire & Gestion d’actifs</td><td>Déploiement d’OCS Inventory</td></tr>
+      <tr><td>Conformité</td><td>Audit ISO 27001, rédaction de procédures sécurité</td></tr>
+      <tr><td>Veille & vulnérabilités</td><td>Gestion des vulnérabilités, patch management</td></tr>
+    </table>
+  </section>
+
+  <section id="realisations">
+    <h2>Réalisations</h2>
+    <div class="card">
+      <h3>Déploiement d'OCS Inventory</h3>
+      <p>Automatisation de l’inventaire des équipements et logiciels pour une meilleure gestion des actifs et des mises à jour de sécurité.</p>
+    </div>
+    <div class="card">
+      <h3>Déploiement de Graylog</h3>
+      <p>Intégration d’une solution SIEM pour centraliser les logs, corréler les événements de sécurité, et détecter les incidents en temps réel.</p>
+    </div>
+    <div class="card">
+      <h3>Durcissement des systèmes</h3>
+      <p>Application de politiques de sécurité, gestion des privilèges, filtrage réseau, et veille active pour la sécurisation des serveurs.</p>
+    </div>
+  </section>
+
+  <section id="pour-vous">
+    <h2>Ce que je peux faire pour vous</h2>
+    <div class="card">
+      <h3>🔒 Sécurité des systèmes – Maintien en Condition de Sécurité (MCS)</h3>
+      <p>Je peux travailler avec vous sur la définition et la mise en œuvre d’une procédure de Maintien en Condition de Sécurité (MCS) adaptée à votre système d'information.</p>
+      <ul>
+        <li>Le maintien à jour des composants logiciels, matériels et applicatifs</li>
+        <li>Une veille active sur les vulnérabilités et correctifs disponibles</li>
+        <li>Des audits de sécurité réguliers</li>
+        <li>Des actions correctives en fonction du niveau de criticité</li>
+      </ul>
+      <p><strong>La démarche suit quatre grandes étapes :</strong></p>
+      <ol>
+        <li>Identification des périmètres concernés et des responsabilités</li>
+        <li>Définition des règles MCS statiques : fréquence des mises à jour, acteurs, outils, contrôles</li>
+        <li>Définition des règles MCS dynamiques : sources de veille, critères de criticité, mesures de traitement</li>
+        <li>Rédaction d’une procédure MCS globale, claire et opérationnelle</li>
+      </ol>
+    </div>
+    <div class="card">
+      <h3>🧭 Cartographie du Système d’Information</h3>
+      <p>Je réalise une cartographie complète et structurée de votre système d’information, incluant : définition du périmètre, ateliers métier, identification des processus critiques, données sensibles et exigences de sécurité, cartographie physique (sites, salles, architecture). Objectif : fournir une vision claire pour prioriser les risques et orienter les mesures de sécurité.</p>
+    </div>
+  </section>
+
+  <section id="projection">
+    <h2>🎯 Ma projection professionnelle</h2>
+    <p>Je construis un parcours évolutif vers le poste de Responsable de la Sécurité des Systèmes d’Information (RSSI) à l’horizon de 7 ans. Mon objectif : allier expertise technique, pilotage stratégique et accompagnement humain.</p>
+    <h3>🔹 Étapes clés de ma trajectoire</h3>
+    <ul>
+      <li><strong>✅ Aujourd’hui</strong> → Analyste SecOps ou Ingénieur Sécurité : compétences techniques et opérationnelles, réactivité face aux incidents</li>
+      <li><strong>🔜 Demain</strong> → Chef de projet sécurité ou Responsable d’équipe SecOps : pilotage, coordination, gestion d’équipe</li>
+      <li><strong>🎯 À moyen terme</strong> → RSSI : vision globale de la sécurité, gouvernance, management</li>
+    </ul>
+    <h3>📈 Ma stratégie de progression</h3>
+    <ul>
+      <li>🎓 Certifications ciblées (CPTS, CISSP, ISO, etc.)</li>
+      <li>🤝 Implication dans des projets à forte valeur ajoutée</li>
+      <li>🧠 Développement des soft skills : communication, management</li>
+      <li>🔄 Apprentissage continu & veille stratégique</li>
+    </ul>
+    <p><strong>🧩 Ce qui m’anime :</strong> Contribuer activement à la cybersécurité opérationnelle aujourd’hui, pour mieux accompagner demain les enjeux de transformation et de résilience d’une organisation.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Hamza Kiyani – Portfolio Cybersécurité</p>
+  </footer>
+</body>
+</html>
